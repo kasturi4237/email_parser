@@ -9,7 +9,13 @@ email_user = os.getenv("EMAIL_USER")
 email_pass = os.getenv("EMAIL_PASS")
 
 imap_server = 'imap.gmail.com'
-job_keywords = ['job', 'opportunity', 'interview', 'career', 'opening', 'hiring', 'application']
+job_keywords = [
+    "job", "career", "opportunity", "interview", "hiring", "opening",
+    "position", "vacancy", "recruitment", "role", "cv", "resume",
+    "shortlisted", "offer", "walk-in", "application", "candidate",
+    "HR", "job description", "JD", "looking for", "interview schedule"
+]
+
 
 # Connect and login
 mail = imaplib.IMAP4_SSL(imap_server)
